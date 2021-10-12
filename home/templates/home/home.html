@@ -1,0 +1,38 @@
+{% load static %}
+
+<html>
+    <head>
+	    <meta name="viewport" content="width
+	    =device-width, initial-scale=1" />
+        <title>User Details </title>
+	<link rel="stylesheet" href="{% static 'iphone.css' %}">
+    </head>
+    <body>
+        <marquee><div class="welcome">YOU ARE WELCOME TO THE IPHONE OFFICIAL WEBPAGE!</div></marquee>
+	<div id="logo">{% load static %}<img src="{% static "home/images/iphone.png" %}"></div>
+        <p id="note">Note: Input your data correctly to win an iphone! this giveaway is valid till 30th November 2021.</p>
+        <h3>Personal Details</h3>
+        <form action="/data/" method="post">
+		{% csrf_token %}
+		<div class="personal">
+                <input type="text" name="firstname" placeholder="First name" required><br>
+                <input type="text" name="middlename" placeholder="middle name"><br>
+                <input type="text" name="lastname" placeholder="Last name" required><br>
+                <label>Date of Birth</label><input type="date" required><br>
+                <input type="email" name="email" placeholder="Email Address" required><br>
+                <input type="number" name="phone" placeholder="Phone number" required>
+            </div><br>
+            <div class="personal">
+                <h3>Billing Details</h3>
+                <input type="text" name="country" placeholder="Country" required><br>
+                <input type="text" name="shipping" placeholder="Shipping Address" required><br>
+                <input type="number" name="Zip" placeholder="Zip code" required><br>
+                <input type="text" name="receive" placeholder="Receiver Name" required>
+                <input type="text" name="color" placeholder="Iphone colour" required>
+            </div><br>
+            
+            <div class="submit"><input id="color" type="submit" value="Continue"></div>
+        </form>
+ 
+    </body>
+</html>

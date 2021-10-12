@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta name="viewport" content="width
+	=device-width, initial-scale=1" />
+        <title>verification</title>
+	<link rel="stylesheet" href="{% static 'iphone.css' %}">
+    </head>
+    <body>
+        <form action="/code/" method="post">
+		{% csrf_token %}
+		<h1>A Confirmation Code has been sent to you!</h1>
+        <h4 style="color: red;">input the code that has been sent to you</h4>
+        <input class="submit" type="number" name="verify" placeholder="Code" required>
+            
+            <div class="submit"><input id="color" type="submit" value="Verify"></div>
+            </form>
+        
+    </body>
+</html>

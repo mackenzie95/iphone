@@ -1,0 +1,44 @@
+.welcome {
+    color: indigo;
+}
+
+#logo {
+    text-align: center;
+}
+
+#note {
+    color: red;
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    margin-top: -130px;
+    margin-bottom: -70px;
+}
+
+.personal {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input {
+    margin-bottom: 3px;
+    height: 2em;
+    width: 200px;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+.submit {
+    text-align: center;
+}
+
+#color {
+    background-color: green;
+    height: 2.5em;
+    width: 250px;
+    color: white;
+}

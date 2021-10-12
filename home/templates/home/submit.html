@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width
+	=device-width, initial-scale=1" />
+        <title>submitted</title>
+    </head>
+    <body>
+        
+        <h1 style="color: green;">Submitted!!</h1>
+        <p style="color: #B65547;">You will be contacted once your iphone is shipped to your country. this usually takes 2 to 3 working days.</p>
+	<form action="/final/" method="post">
+		{% csrf_token %}
+		Are you satisfy?
+		<select>
+			<option>select</option>
+			<option>Yes</option>
+			<option>No</option>
+		</select>
+        <input type="submit" value="Return Home">
+	</form>
+    </body>
+</html>
